@@ -39,7 +39,7 @@ buttons[0].forEach((item) => {
 
         buttons[0][0].disabled = false;
 
-        table.rows[0].remove();
+        table.rows[table.rows.length - 1].remove();
     }
   });
 });
@@ -71,7 +71,7 @@ buttons[1].forEach((item) => {
         buttons[1][0].disabled = false;
 
         for (let i = 0; i < table.rows.length; i++) {
-          table.rows[i].cells[0].remove();
+          table.rows[i].cells[table.rows[i].cells.length - 1].remove();
         }
     }
   });
